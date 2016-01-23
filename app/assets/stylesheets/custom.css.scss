@@ -1,5 +1,5 @@
-$navbar-default-bg: #312312;
-$light-orange: #ff8c00;
+$navbar-default-bg: black;
+$light-orange: #312312;
 $navbar-default-color: $light-orange;
 
 
@@ -38,25 +38,35 @@ body {
   text-align: center;
 }
 
-h1,h2,h3,h4 {
+.jumbotron {
+  background-image: asset-url('cover_1.jpg');
+  background-size: cover;
+  height: 400px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  font-size: 1.7em;
+  background-color: black;
+}
+h2,h3,h4 {
   line-height: 1;
 }
 
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
+.h2 {
   font-size: 1.2em;
   margin-bottom: 3px;
   text-align: center;
   font-weight: normal;
   color: #777;
 }
-
 .left {
   text-align: left;
   letter-spacing: .5px;

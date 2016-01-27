@@ -1,0 +1,24 @@
+<h1>All Projects</h1>
+<hr/>
+
+<% @projects.each do |project| %>
+<div class="row">
+  
+  <div class="col-md-2">
+    <section class="developer_info center">
+      <%= gravatar_for project.developer, size: 100 %>
+      <h5>Developer name: <%= project.developer.developername %></h5>
+    </section> 
+  </div>
+  
+  <div class="col-lg-8 well">
+    <h4><%= link_to project.name, " " %></h4>
+    <p><%= project.summary %></p>
+    <p>
+      <span class='quiet'><small> <%= time_ago_in_words(project.created_at) %></small></span>
+    </p>
+    </div>
+  
+</div>
+
+<% end %>

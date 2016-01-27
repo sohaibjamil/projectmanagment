@@ -1,0 +1,21 @@
+<%= render 'shared/page_title', title: 'Signup' %>
+
+<div class="row">
+  <div class="well col-md-8 col-md-offset-2">
+    <%= form_tag '/Sign up' do %>
+    <%= label_tag :Username %>
+    <%= text_field_tag :Username %>
+    
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+    
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+
+    
+    <%= submit_tag 'Sign up', class: "btn btn-success" %>
+    <% end %>
+    
+  </div>
+</div>
+
